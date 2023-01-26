@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Import CSS-->
+    <style>
+      /* Google Font Import - Lato */
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+      * {
+        font-family: 'Lato', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        /* ===== Colors ========= */
+        --body-color: #e4e9f7;
+        --sidebar-color: #ffffff;
+        --primary-color: #695cfe;
+        --primary-color-light: #f6f5ff;
+        --toggle-color: #ddd;
+        --text-color: #707070;
+
+        /* ===== Transition ===== */
+        --tran-02: all 200ms ease;
+        --tran-03: all 300ms ease;
+        --tran-04: all 400ms ease;
+        --tran-05: all 500ms ease;
+      }
+
+      body {
+        height: 100vh;
+        background: var(--body-color);
+      }
+      /* ===== Reusable CSS ===== */
+      .sidebar .text {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--text-color);
+      }
+
+      .sidebar .image {
+        min-width: 60px;
+        display: flex;
+        align-items: center;
+      }
+
+      /* ===== Sidebar ========== */
+      .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 10vw;
+        padding: 10px 14px;
+        background: var(--sidebar-color);
+      }
+
+      .sidebar .image-text img {
+        width: 40px;
+        border-radius: 7px;
+      }
+
+      .sidebar header .image-text {
+         display: flex;
+         align-items: center; 
+      }
+
+      header .image-text .header-text {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .header-text .name {
+        font-weight: 600;
+      }
+
+      .header-text .profession {
+        margin-top: -2px;
+      }
+
+
+    </style>
+
+    <!-- Import Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Sidebar Menu</title>
+  </head>
+  <body>
+    <nav class="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="logo.png" alt="logo">
+          </span>
+          <div class="text header-text">
+            <span class="name">MadLeak</span>
+            <span class="profession">Devlopment</span>
+          </div>
+        </div>
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+    </nav>
+  </body>
+</html>
